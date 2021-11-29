@@ -1,8 +1,10 @@
 export class Produto {
   id: string;
   nome: string;
-  descricao: string;
-  estoque: number;
+  n: String;
+  produto: string;
+  defeito: string;
   valor: number;
+  status: string;
 }
 

@@ -25,9 +25,11 @@ export class HomePage implements OnInit {
         {
           id: registro.payload.doc.id,
           nome: registro.payload.doc.data()['nome'],
-          descricao: registro.payload.doc.data()['descricao'],
-          estoque: registro.payload.doc.data()['estoque'],
-          valor: registro.payload.doc.data()['valor']
+          n: registro.payload.doc.data()['n'],
+          produto: registro.payload.doc.data()['produtro'],
+          defeito: registro.payload.doc.data()['defeito'],
+          valor: registro.payload.doc.data()['valor'],
+          status: registro.payload.doc.data()['status'],
         }
       ));
     });

@@ -15,21 +15,33 @@
   </ion-item>
 
   <ion-item lines="full">
-    <ion-label position="floating">Descrição</ion-label>
+    <ion-label position="floating">N°</ion-label>
     <!-- Integra o input do Ionic com o atributo nome da classe Produto -->
-    <ion-input [(ngModel)]="produto.descricao"></ion-input>
+    <ion-input [(ngModel)]="produto.n"></ion-input>
   </ion-item>
 
   <ion-item lines="full">
-    <ion-label position="floating">Qtde Estoque</ion-label>
+    <ion-label position="floating">Produto</ion-label>
     <!-- Integra o input do Ionic com o atributo nome da classe Produto -->
-    <ion-input [(ngModel)]="produto.estoque" class="ion-text-right" type="number"></ion-input>
+    <ion-input [(ngModel)]="produto.produto"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Defeito</ion-label>
+    <!-- Integra o input do Ionic com o atributo valor da classe Produto -->
+    <ion-input [(ngModel)]="produto.defeito"></ion-input>
   </ion-item>
 
   <ion-item lines="full">
     <ion-label position="floating">Valor</ion-label>
     <!-- Integra o input do Ionic com o atributo valor da classe Produto -->
     <ion-input [(ngModel)]="produto.valor" class="ion-text-right" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Status</ion-label>
+    <!-- Integra o input do Ionic com o atributo valor da classe Produto -->
+    <ion-input [(ngModel)]="produto.status"></ion-input>
   </ion-item>
   <br>
   <!-- Chama o método salvar que envia os dados para o Firebase -->

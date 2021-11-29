@@ -29,9 +29,11 @@ export class AlterarProdutoPage implements OnInit {
     // Busca os dados do produto com o ID que veio pela rota
     this.prodService.buscaPorId(this.produto.id).subscribe(dados => {
       this.produto.nome = dados['nome'];
-      this.produto.descricao = dados['descricao'];
-      this.produto.estoque = dados['estoque'];
+      this.produto.n = dados['n'];
+      this.produto.produto = dados['produto'];
+      this.produto.defeito = dados['defeito'];
       this.produto.valor = dados['valor'];
+      this.produto.status = dados['status'];
     });
   }
 
